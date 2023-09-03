@@ -11,9 +11,11 @@ export const LoginPage = () => {
 
   const onLogin = () => {
 
+    const lastPath = localStorage.getItem('lastPath') || '/';
+
     login( 'Andres Torrez' );
 
-    navigate('/', {
+    navigate( lastPath , {
       replace: true// evita que pueda regresar al historial anterior (a la ultima) se va directo a una anterior a esa
     });
   }
