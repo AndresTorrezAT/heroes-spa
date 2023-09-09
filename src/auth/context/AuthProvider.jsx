@@ -46,7 +46,7 @@ export const AuthProvider = ({ children }) => {
     }
 
     return (
-        <AuthContext.Provider value={{
+        <AuthContext.Provider value={{ 
             ...authState,
             // Methods...
             login: login,
@@ -54,5 +54,5 @@ export const AuthProvider = ({ children }) => {
         }}>
             { children }
         </AuthContext.Provider>
-    );
+    ); // en los test solo enviamos esto directamente
 }

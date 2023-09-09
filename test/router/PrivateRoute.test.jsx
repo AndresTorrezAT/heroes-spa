@@ -8,7 +8,7 @@ describe('Pruebas en el <PrivateRoute/>', () => {
 
     test('debe de mostrar el children si está autenticado', () => {
 
-        Storage.prototype.setItem = jest.fn();
+        Storage.prototype.setItem = jest.fn(); // creamos una funcion test del prototipe de <PrivateRoute>
         
         const contextValue = {
             logged: true,

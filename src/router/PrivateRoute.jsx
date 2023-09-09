@@ -11,7 +11,7 @@ export const PrivateRoute = ({ children }) => { //children son los componentes
 
     const lastPath = pathname + search;
     localStorage.setItem('lastPath', lastPath );
-    console.log('re-render');
+    // console.log('re-render');
 
 
     return ( logged )
