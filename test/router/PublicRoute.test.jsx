@@ -1,7 +1,7 @@
-const { render, screen } = require("@testing-library/react");
-const { PublicRoute } = require("../../src/router/PublicRoute");
-const { AuthContext } = require("../../src/auth");
-const { MemoryRouter, Routes, Route } = require("react-router-dom");
+import { render, screen } from "@testing-library/react";
+import { PublicRoute } from "../../src/router/PublicRoute";
+import { AuthContext } from "../../src/auth";
+import { MemoryRouter, Routes, Route } from "react-router-dom";
 
 
 describe('Pruebas en <PublicRoute />', () => {

@@ -1,6 +1,7 @@
 import { useLocation, useNavigate } from 'react-router-dom';
-import queryString from 'query-string'; //para extraer mas facil los parametros del url
+import queryString from 'query-string' // extrae mas facil los parametros del url
 
+// const queryString = require('query-string');
 import { useForm } from '../../hooks/useForm';
 import { HeroCard } from '../components';
 import { getHeroesByName } from '../helpers';
